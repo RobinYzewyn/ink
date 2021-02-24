@@ -21,11 +21,12 @@ const App = () => {
 	const currentNumber = () =>{
 		number = Math.floor(Math.random() * 100);
 		setNumber(number);
+		return number;
 	}
 
 	return <>
 	<Text>Hoger of lager dan: {currentNumber}</Text>
-	<Text color="green">{counter} tests passed</Text>
+	
 	</>;
 };
 
